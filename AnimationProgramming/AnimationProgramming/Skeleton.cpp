@@ -122,6 +122,8 @@ void Animation::Skeleton::BindAnimation(const std::string& p_file)
 	m_currentKeyFrame = 0.0f;
 	m_keyCount = GetAnimKeyCount(p_file.c_str());
 	m_animationName = p_file;
+
+	std::cout << m_keyCount << std::endl;
 }
 
 void Animation::Skeleton::LerpAnimation()

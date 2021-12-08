@@ -2,6 +2,7 @@
 
 #include "Simulation.h"
 #include "Skeleton.h"
+#include "InputManager.h"
 
 class CSimulation : public ISimulation
 {
@@ -11,4 +12,8 @@ class CSimulation : public ISimulation
 	void Update(float frameTime) override;
 
 	void DrawAxis();
+
+	void HandleInput();
+
+	Animation::InputManager inputManager;
 };
